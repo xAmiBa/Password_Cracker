@@ -8,7 +8,7 @@ password = input("Write down your password: ")
 
 
 
-print("Thank you! Your password's security is being checked... Look below for personalised report.")
+print("Thank you! Your password's security is being checked...")
 print()
 
 # Bruce force attack with use of Bruce force algorythm
@@ -22,7 +22,7 @@ character_list = list(characters)
 #timimg variables
 #time measurment starts
 start_time = time.time()
-timeout = time.time() + 5
+timeout = time.time() + 60
 attempts = 0
 
 #if timeout > time.time():
@@ -36,17 +36,23 @@ while (guess != password) and timeout > time.time():
     # Cracked password output
     if guess == password:
         print("Your password has been cracked! You need more secure password than \"" + guess + "\".")
+        print()
         # If cracked: Time
         print("It took %s seconds to hack it!" % (time.time() - start_time))
+        print()
 
         # If cracked: Attempts number
-        print(f"I guessed it in {attempts} attempts")
+        print(f"I guessed it in {attempts} attempts.")
+        print()
         print("For the sake of safety, let's improve your password!")
+        print()
 
 #Make python stop after 60 sec
 if timeout <= time.time():
     print("I couldn't hack your password in less than 60sec!")
-    print("Unfortunately hackers might have faster computer, I think we should improve it!")
+    print()
+    print("Unfortunately hackers might have faster computer, I think we should check how secure it is!")
+    print()
 
 
 
@@ -56,13 +62,11 @@ healthcheck = input("Do you want to check how safe your password is? yes/no ")
 if healthcheck == "yes":
 
     new_password = input("Think of better password and let\'s check it! Your new password: ")
+    print()
     lowercase = 0
     uppercase = 0
     punctuation = 0
     numbers = 0
-
-
-
 
     #to check improvement of password
     check_character_number = "missing"
@@ -88,59 +92,75 @@ if healthcheck == "yes":
                 numbers = + 1
 
         # password healthcheck output
+        print("****************************")
         print("*** PASSWORD HEALTHCHECK ***")
+        print("****************************")
         print()
         print(f"Your password \"{new_password}\" has {character_number} characters.")
+        print()
 
         if character_number < 12:
-            print("</3 It's too short. It should consist minimum of 12 characters.")
+            print("</3 It's too short. It should consist minimum of 12 characters. <--- ADD CHARACTERS")
+            print()
             check_character_number = "missing"
 
         else:
             print("<3 Well done! The length of your password is sufficient.")
+            print()
             check_character_number = "good"
 
         if uppercase == 0:
-            print("</3 Ups! No uppercase characters! Your password should have at least one.")
+            print("</3 Ups! No uppercase characters! Your password should have at least one. <--- ADD CAPITAL LETTER")
+            print()
             check_uppercase = "missing"
 
         else:
             print("<3 Good job! One or more uppercase characters makes your password more secure.")
+            print()
             check_uppercase = "good"
 
         if numbers == 0:
-            print("</3 Ups! You didn't include any numbers. At least one number in your password will keep you safer.")
+            print("</3 Ups! You didn't include any numbers. At least one number in your password will keep you safer. <--- ADD NUMBER")
+            print()
             check_numbers = "missing"
 
         else:
             print("<3 Woooohooo! You have one or more digits there. Keep these numbers in your password, no hacker will crack it!")
+            print()
             check_numbers = "good"
 
         if punctuation == 0:
-            print("</3 You need some punctuation marks in your password. Make it shine!")
+            print("</3 You need some punctuation marks in your password. Make it shine! <--- ADD SPECIAL CHARACTER")
+            print()
             check_punctuation = "missing"
 
         else:
             print("<3 Lovely! Your password contains punctuation marks. You made it real safe!")
+            print()
+            print("****************************")
             check_punctuation = "good"
+            print()
 
         if check_character_number == "missing" or check_numbers == "missing" or check_punctuation == "missing" or check_uppercase == "missing":
-            new_password = input("Unfortunately your password is not safe! Have a look at healthcheck and try again: ")
+            print()
+            new_password = input("Unfortunately your password is not safe! Have a look at healthcheck report and try again: ")
 
         else:
             break
 
 # SAFE password algorythm
 # User input: Do you want to generate safer password?
-
+print()
 print("Your password is safe now! No cracker will hack it! Ups.. No hacker will crack it!")
+print()
 print("To make your password super unique and safe, you can use my password mixing algorythm.")
+print()
 print("National Cyber Security Centre advises to include 3 words in your password.")
+print()
 print("Let's choose 3 words. You can type in name of your pet, your favourite food, favourite music genre,")
 print("favourite colour, first country you travelled to... Type in 3 words with spaces inbetween.")
+
 #*** percentage of how safe password is
-
-
 
 three_words = input("For example: franklin yellow blues. Your turn: ")
 
