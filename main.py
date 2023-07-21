@@ -240,7 +240,7 @@ if password_mixer == "yes":
             print()
             print("No worries!")
 
-    # User chooses if they want to copy they newly generated password.
+    # User chooses if they want to copy their newly generated password.
     copy_password = input("Would you like it to be copied to your clipboard? yes/no ")
     print()
     copy_password_to_clipboard(copy_password)
