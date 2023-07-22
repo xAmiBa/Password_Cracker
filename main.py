@@ -177,7 +177,7 @@ else:
     print("* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  * * * * *  *")
 
 
-# STEP 3: PASSWORD HASHING ALGORYTHM PART 1 - RANDOM "PASSWORD MIXER"
+# STEP 3: PASSWORD GENERATOR ALGORYTHM PART 1 - RANDOM "PASSWORD MIXER"
 # User chooses if they want to generate new password.
 
 password_mixer = input("Would you like to generate a brand new password with \"Password mixer\" program?: yes/no ")
@@ -246,7 +246,7 @@ if password_mixer == "yes":
     copy_password_to_clipboard(copy_password)
 
 
-    # STEP 3.2: PASSWORD HASHING ALGORYTHM PART 2 - ADVANCED HASHING
+    # STEP 3.2: PASSWORD GENERATOR ALGORYTHM PART 2 - ADVANCED OPTIONS
 
     # User chooses if they want to advance their password security with advanced hashing.
     print()
@@ -268,7 +268,7 @@ if password_mixer == "yes":
         copy_password = input("Would you like it to be copied to your clipboard? yes/no ")
         copy_password_to_clipboard(copy_password)
 
-# User chooses to not generate new password with hashing algorythm
+# User chooses to not generate new password with generator algorythm
 else:
     print("No worries!")
 

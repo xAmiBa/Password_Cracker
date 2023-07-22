@@ -2,7 +2,7 @@ import random
 import pyperclip
 import string
 
-# PASSWORD HASHING ALGORYTHM
+# PASSWORD GENERATOR ALGORYTHM
 # User chooses if they want to generate new password.
 
 password_mixer = input("Would you like to generate a brand new password with \"Password mixer\" program?: yes/no ")
@@ -70,7 +70,7 @@ if password_mixer == "yes":
     print()
     copy_password_to_clipboard(copy_password)
 
-    # User chooses if they want to advance their password security with advanced hashing.
+    # User chooses if they want to advance their password security with advanced generator.
     print()
     hard_password = input("Would you like to make it even harder to hack? yes/no ")
     print()
@@ -90,7 +90,7 @@ if password_mixer == "yes":
         copy_password = input("Would you like it to be copied to your clipboard? yes/no ")
         copy_password_to_clipboard(copy_password)
 
-# User chooses to not generate new password with hashing algorythm
+# User chooses to not generate new password with generator algorythm
 else:
     print("No worries!")
 

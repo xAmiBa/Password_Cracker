@@ -18,8 +18,8 @@ This Python program is designed to perform several functions related to password
    - The user is given feedback on the password's security level and safety tips to improve it.
    - The user is asked to enter a new password based on the provided feedback until the password meets the security criteria.
 
-3. **Password Generation with custom hashing algorithm:**
-   - The program offers the user the option to generate a brand new password using the "Password Mixer" algorithm.
+3. **Password Generation with custom password generator:**
+   - The program offers the user the option to generate a new password using the "Password Mixer" algorithm.
    - The user is instructed to input three random words separated by spaces.
    - Two random words are then converted to uppercase characters.
    - A random digit and punctuation mark are appended to the password.
