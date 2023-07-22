@@ -28,7 +28,7 @@ This Python program is designed to perform several functions related to password
    - Specific characters in the password are replaced with numeric or punctuation counterparts.
    - The user has the option to copy the modified password to their clipboard.
 
-## Libraries Used:
+## Libraries / modules Used:
 
 - `random`: For generating random passwords, indexes, and choices.
 - `string`: For accessing pre-defined sets of characters like lowercase letters, uppercase letters, digits, and punctuation marks.

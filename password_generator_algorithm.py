@@ -55,7 +55,7 @@ if password_mixer == "yes":
     print(f"Your new password is: {three_words}")
     print()
 
-    # Function that uses pyperclip library to copy variable into the users' clipboard.
+    # Function that uses pyperclip module to copy variable into the users' clipboard.
     def copy_password_to_clipboard(copy_password):
         if copy_password == "yes":
             pyperclip.copy(three_words)
