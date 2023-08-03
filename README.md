@@ -1,3 +1,5 @@
+![alt text](https://github.com/xAmiBa/Password_Cracker/blob/da0ba06f712fb309050baedc2d057417e9387045/Screenshot%202023-08-03%20at%2020.30.47.png?raw=true)
+
 # Password Security Python Program
 
 This Python program is designed to perform several functions related to password security. It consists of multiple steps and functionalities that help the user check the strength of their password, generate a new strong password, and enhance its security using custom hashing techniques.
